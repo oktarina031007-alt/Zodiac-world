@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-bubbly {
+    font-family: 'Fredoka', cursive, 'Quicksand', sans-serif;
+  }
+}
+
+/* Custom Cosmic Game Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes cloudDrift {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(250, 204, 21, 0.7));
+  }
+}
+
+@keyframes starShimmer {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes blooSleep {
+  0%, 100% {
+    transform: translateY(4px) scale(0.97);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.02);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-cloud-drift {
+  animation: cloudDrift 20s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-star-shimmer {
+  animation: starShimmer 2.5s ease-in-out infinite;
+}
+
+.animate-bloo-sleep {
+  animation: blooSleep 3.5s ease-in-out infinite;
+}
+
+/* Custom 3D Glossy Button Styles */
+.btn-gold-3d {
+  background: linear-gradient(180deg, #fef08a 0%, #facc15 45%, #eab308 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 0 #ca8a04, 0 10px 20px rgba(202, 138, 4, 0.35);
+  text-shadow: 0 1px 2px rgba(113, 63, 18, 0.4);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-gold-3d:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #ca8a04, 0 4px 10px rgba(202, 138, 4, 0.25);
+}
+
+.btn-sky-3d {
+  background: linear-gradient(180deg, #bae6fd 0%, #38bdf8 50%, #0ea5e9 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 0 #0284c7, 0 10px 20px rgba(2, 132, 199, 0.35);
+  text-shadow: 0 1px 2px rgba(12, 74, 110, 0.4);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-sky-3d:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #0284c7, 0 4px 10px rgba(2, 132, 199, 0.25);
+}
+
+.btn-ocean-3d {
+  background: linear-gradient(180deg, #7dd3fc 0%, #0284c7 50%, #0369a1 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 0 #075985, 0 10px 20px rgba(7, 89, 133, 0.35);
+  text-shadow: 0 1px 2px rgba(8, 47, 73, 0.4);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-ocean-3d:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #075985, 0 4px 10px rgba(7, 89, 133, 0.25);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(224, 242, 254, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.6);
+  border-radius: 9999px;
+}

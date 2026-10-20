@@ -1,0 +1,6 @@
+{
+  "name": "Zodiac World",
+  "description": "Welcome to Your Little Cosmic Universe! Game petualangan astrologi seru dan imut bersama Bloo, 12 pulau zodiak, mini games, kuis interaktif, dan koleksi bintang.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
